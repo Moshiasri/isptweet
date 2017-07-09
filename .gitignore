@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Except selected files
+!.gitignore
+!main.py
+!setup.py
