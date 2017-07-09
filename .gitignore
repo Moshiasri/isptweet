@@ -5,3 +5,5 @@
 !.gitignore
 !main.py
 !setup.py
+!readme_images
+!readme_images/*
