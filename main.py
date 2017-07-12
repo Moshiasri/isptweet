@@ -19,11 +19,15 @@ try:
     isp = argv[1]
     expected_down = float(argv[2])
     expected_up = float(argv[3])
+    try:
+        RETEST_DELAY = float(argv[4])
+    except IndexError:
+        pass
 except TypeError:
     print("[isptweet]: Fatal Error: Unable to convert speeds to numbers.")
     exit()
 except IndexError:
-    print("Usage: isptweet @ISPTWITTER DOWN UP")
+    print("Usage: isptweet @ISPTWITTER DOWN UP [DELAY]")
     exit()
 
 # read API tokens from environment variables
